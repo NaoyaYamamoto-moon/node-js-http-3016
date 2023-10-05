@@ -67,10 +67,10 @@ const server = http
     }
   })
   .on('error', e => {
-    console.error(`Server Error`, e);
+    console.error('Server Error', e);
   })
   .on('clientError', e => {
-    console.error(`Client Error`, e);
+    console.error('Client Error', e);
   });
 //const port = 8000;
 const port = process.env.PORT || 8000;
