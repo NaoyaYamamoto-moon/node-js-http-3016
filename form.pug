@@ -3,6 +3,13 @@ html(lang="jp")
   head
     meta(charset="UTF-8")
     title アンケート
+  script(async src="https://www.googletagmanager.com/gtag/js?id=G-GRWPQ052JL")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GRWPQ052JL');
   body
     h1 どちらが食べたいですか？
     form(method="post" action=path)
